@@ -1,0 +1,9 @@
+weights/
+*.pth
+*.onnx
+vendor/Depth-Anything-V2/checkpoints/
+__pycache__/
+*.pyc
+.env
+venv/
+.ipynb_checkpoints/

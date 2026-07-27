@@ -1,0 +1,12 @@
+torch
+torchvision
+opencv-python-headless
+numpy
+matplotlib
+pillow
+ultralytics
+fastapi
+uvicorn[standard]
+python-multipart
+huggingface_hub
+onnxruntime
