@@ -1,9 +1,13 @@
 import cv2
 import matplotlib.pyplot as plt
-img = cv2.imread(r"D:\project\detect + depth\depth - detect repo\sample_images\00555_colors.png")
+import os
+img = os.path.join(os.path.dirname(__file__),"..","sample_images","00555_colors.png")
+img = cv2.imread(img)
+
 
 from pipeline import run_pipeline
 annotated, detections = run_pipeline(img)
-cv2.imwrite(r"D:\project\detect + depth\depth - detect repo\output\00555_colors_annotated.png", annotated)   
+write_path = os.path.join(os.path.dirname(__file__),"..","output","00555_colors_annotated.png")
+cv2.imwrite(write_path, annotated)   
 # plt.imshow(cv2.cvtColor(annotated, cv2.COLOR_BGR2RGB))
 # plt.show()
