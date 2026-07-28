@@ -32,7 +32,7 @@ def depth_pred(raw_img):
     model = load_model()
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device)
-    raw_img = torch.from_numpy(raw_img).permute(2, 0, 1).unsqueeze(0).float().to('cpu')
+    # raw_img = torch.from_numpy(raw_img).permute(2, 0, 1).unsqueeze(0).float().to('cpu')
     depth = model.infer_image(raw_img)  # HxW depth map in meters, numpy
     if torch.is_tensor(depth):
         depth = depth.cpu().numpy()
