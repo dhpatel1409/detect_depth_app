@@ -20,7 +20,7 @@ Most object detectors tell you *what's* in an image. This pipeline also tells yo
  
 | Input | Output |
 |---|---|
-| ![input](sample_images/00555_colors.jpg) | ![output](output/00555_colors_annoted.jpg) |
+| ![Input](sample_images/00555_colors.png) | ![output](output/00555_colors_annotated.png) |
  
 *Raw image (left) vs. detected objects annotated with class, confidence, and estimated distance in meters (right).*
 ## Architecture
