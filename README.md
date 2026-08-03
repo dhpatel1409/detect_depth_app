@@ -16,6 +16,13 @@ Most object detectors tell you *what's* in an image. This pipeline also tells yo
 3. **Fusion logic** samples the depth map inside each bounding box (median, for robustness to box edges/occlusion) to estimate that object's distance
 4. Output: the original image annotated with class, confidence, and distance for every detected object
 
+## Example
+ 
+| Input | Output |
+|---|---|
+| ![input](sample_images/00555_colors.jpg) | ![output](output/00555_colors_annoted.jpg) |
+ 
+*Raw image (left) vs. detected objects annotated with class, confidence, and estimated distance in meters (right).*
 ## Architecture
 
 ```
